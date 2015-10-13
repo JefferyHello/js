@@ -1,0 +1,31 @@
+<html>
+<head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	 <style>
+	 	div {
+	 		width: 300px;
+	 		height: 200px;
+	 		background-color: blue;
+	 	}
+	 </style> 
+<script>
+function t1() {
+	alert('是谁？');
+}
+
+function t2() {
+	alert('请填写完整！');
+	return false;
+}
+</script>
+</head>
+	<body>
+		<div onmouseover="t1();">
+		</div>
+		<form action="22.html" onsubmit="return t2();" >
+		<p><input type='text' name="username"></p>
+		<p><input type='text' name="email"></p>
+		<p><input type="submit" value="提交"/></p>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<script>
+function del() {
+	var list = document.getElementsByTagName('li');
+	var lastli = list[list.length-1];
+	lastli.parentNode.removeChild(lastli);
+}
+
+function add() {
+	var li = document.createElement('li');
+	var txt = document.createTextNode('冬');
+	li.appendChild(txt);
+
+	document.getElementsByTagName('ul')[0].appendChild(li);
+} 
+</script>
+</head>
+	<body>
+		<h1>创建节点</h1>
+		<input type="button" value="增加" onclick="add();" />
+		<ul>
+			<li>春</li>
+			<li>夏</li>
+			<li>秋</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<script>
+function getStyle(obj, attr) {
+	return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj, null)[attr];
+}
+
+function t2() {
+	var div = document.getElementsByTagName('div')[0];
+	console.log(getStyle(div, 'width'));
+}
+
+function t() {
+	var d = document.getElementsByTagName('div')[0]; 
+	if (d.style.backgroundColor == 'red') {
+		d.style.backgroundColor = 'green';
+	} else {
+		d.style.backgroundColor = 'red';
+	}
+	d.style.borderWidth = parseInt(getStyle(d, 'borderWidth'))+1+'px';
+	console.log(d.style.borderWidth);
+}
+</script>
+
+<style>
+#test1 {
+	background-color: red;
+	width: 100px;
+	height: 50px;
+	border: 1px solid blue;
+}
+</style>
+</head>
+	<body>
+		<div id='test1' onclick="t2();" >
+		</div>
+	</body>
+</html>

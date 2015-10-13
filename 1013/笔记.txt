@@ -4,3 +4,5 @@
 4、js逻辑运算，返回的是最早能判断表达式结果的那个值
 5、数组、字符串都可以看成是一个对象
 6、字符串对象的indexOf(str)方法，返会字串在原字符串中的位置
+7、document.getElementsByTagName(Name/ClassName)都是返回一个集合,返回节点集用elements，返回一个用element
+8、obj.style.width(style里面的width属性)如果css属性带有(boder-top-style)则写成BoderTopStyle

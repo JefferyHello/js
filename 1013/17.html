@@ -1,0 +1,28 @@
+<html>
+<head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+</head>
+	<body>
+		<input type="button" value="添加春夏秋" onclick="add();" />
+		<input type="button" value="添加冬" onclick="add2();" />
+		<ul></ul>
+		<script>
+/*function del() {
+	var list = document.getElementsByTagName('li');
+	var lastli = list[list.length-1];
+	lastli.parentNode.removeChild(lastli);
+}*/
+function add() {
+	var ul = document.getElementsByTagName('ul')[0];
+	ul.innerHTML = '<li>春</li><li>夏</li><li>秋</li>';
+}
+
+function add2() {
+	var ul = document.getElementsByTagName('ul')[0];
+	ul.innerHTML += '<li>冬</li>';
+}
+
+</script>
+
+	</body>
+</html>
