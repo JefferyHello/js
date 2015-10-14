@@ -1,0 +1,16 @@
+var num = 0;
+outermost:
+for (var i=0; i<10; i++) {
+	for (var j=0; j<10; j++) {
+		if (i == 5 && j == 5) {
+			break outermost;
+		}
+		num++;
+	}
+}
+console.log(num);
+
+/**
+如果没有break，num应该等于100，添加了break后num=55。
+为什么break跳出循环到第2行后，就直接执行了第11行，而不是按从上向下的顺序继续执行for循环语句？
+*/
