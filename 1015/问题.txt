@@ -1,0 +1,9 @@
+var color = "red";
+function sayColor(){
+	console.log(this.color);
+}
+sayColor();
+
+/**
+为什用var声明color,会导致输出undifined
+*/
