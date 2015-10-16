@@ -1,0 +1,2 @@
+1：在计算string的length属性时，中文字符也按一个字符算。
+2：substring(3,0)相当于substring(0,3);
