@@ -1,0 +1,58 @@
+<html>
+<script>
+global.a = "test";
+var c = "test";
+b = "test1111";
+
+var self = this;
+
+console.log(this);
+
+console.log("----------------------------------------------->");
+function Person(name){
+	this.name = name;
+	this.say = function(){
+		console.log(this === global);
+
+	    console.log('global.c: ' + global.c);
+	    console.log('self.c: ' + self.c);
+	    console.log('this.c: ' + this.c);
+	    console.log('c: ' + c);
+
+	    console.log('this.a: ' + this.a);
+	    console.log('this.b: ' + this.b);
+
+	    console.log('global.a: ' + global.a);
+	    console.log('global.b: ' + global.b);
+
+	}
+}
+
+var p = new Person('Jim');
+p.say();
+
+console.log();
+console.log();
+console.log();
+
+function say(){
+	console.log(this === global);
+
+	console.log('global.c: ' + global.c);
+    console.log('self.c: ' + self.c);
+    console.log('this.c: ' + this.c);
+    console.log('c: ' + c);
+
+    console.log('this.a: ' + this.a);
+    console.log('this.b: ' + this.b);
+
+    console.log('global.a: ' + global.a);
+    console.log('global.b: ' + global.b);
+}
+
+say();
+
+
+console.log(this);
+</script>
+</html>
