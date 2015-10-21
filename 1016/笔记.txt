@@ -1,2 +1,4 @@
 1：在计算string的length属性时，中文字符也按一个字符算。
 2：substring(3,0)相当于substring(0,3);
+3：把对象的属性定义（configurable）修改为false后；就无法在把configurable改为true，并且此时再调用Object.defineProperty()修改除writable之外的其它特性都会导致错误。
+
