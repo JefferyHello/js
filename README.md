@@ -1,2 +1,2 @@
 # js
-ECMAScript练习文件夹。
+JavaScript小练习
